@@ -26,5 +26,28 @@
     d. event loops - refreshes the colstack everytime to check if its empty or not. If empty,
                     callback queue is checked for any remaining function or memory calls
 
+6. this keyword --> current context
+                --> Alays points to an object
+                --> this binding (where does it point to)
+                    a. Default binding - points to window
+                    b. Implicit
+                    c. Explicit- makes this point to argument passed in the first parameter
+                        i. apply(,[])- takes array and assigns it in the order of paramters displayed in the first place 
+                        ii. bind()- It assigns which object will be changed by a particular function as another function then changes its value
+                        iii. call(,) - takes single data or Destructured array as input and assigns it in the order of paramters displayed in the first place 
+                    d. new () - creates en empty object and dills it data passed in a constructor function
+
+7. Prototypes
+    a. object {} -- used to achieve inheritance
+    b. if person is name of constructor function then prototype is called through person.prototyoe
+    c. __proto__ : dunder proto - holds the derivation of the prototype
+    d. person.prototype === p1.__proto__  . THis shows that each created object from the constructor contains an accessible way to the the prototype 
+    e. It helps in saving the memory used in creating new objects from the constructor function again and again
 
 
+8. Lexical Environment= this Environment+ parent Environment
+                        eg. f1{f2{f3{}}};
+
+                        f3 env= f3+ f2 env
+                        f2= f2+f1 env
+                        f1= f1+ source env                        
