@@ -1,0 +1,26 @@
+1. finalcard.html and finalcard.css- zomato card 
+2. transform command
+    a. translateX() , translateY, translateZ
+    b. rotateX(___deg), rotateY(___deg),rotateZ(__deg)
+    c. scale((no.of times eg 2, 0.5 ,1,0.7)) 
+
+3. Animation
+    a. animation-name,animation-delay, animation-iteration-count
+    b. animation-fill-mode: forward -( to mke the animation persist at its last state)
+    c. animation-direction - to change the order in which the final and initial state occur
+    d. animation-timing-function: movement type for the animation (ease out, easein etc.)
+
+    in one line 
+    animation: name duration timing-function delay iteration-count direction fill-mode
+
+    Method 1:----------------------
+    @keyframes ______{
+        from{
+
+        }
+        to{
+
+        }
+    }
+    animation-name: _____;
+    -------------------------------

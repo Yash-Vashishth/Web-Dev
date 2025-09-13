@@ -1,0 +1,56 @@
+Javascript
+1. for loops
+    a. for-of - works only for objects
+    b. for-in - wprks for both arrays and objects
+    c. traditional for loop
+
+2. Functions-
+    function Name(argument,argument,...){
+
+    }
+    -- functions can be treated as datatype
+    --High-order functions - Accept or return function
+    -- Callback function - Function that are used in high-order functions
+
+3. Execution Context
+    -- two types
+        1. GEC (Global Execution Context)
+        -- deals in variables and functions defined globally
+        -- enters variables value into the cache memory
+        -- ignores memory and 
+        2. FEC (Function Execution Context)
+    -- memory allocation phase 
+    -- code execution phase
+Eg. Both 1. and 2. work in this case since functions have already been defined in the global memory allocation they will run but, in same situation, variables will give undefined since they
+1.
+var temp="hello"
+function a() {
+    var temp1 = 1;                                        Output-
+    var temp2 = 2;                                                      hello
+                                                                        1
+    console.log(temp1);                                                 2
+    console.log(temp2);
+}
+console.log(temp);
+a();
+
+2.
+a();                                                      Output-
+console.log(temp)                                                    undefined   
+function a() {                                                        1
+    var temp1 = 1;                                                    2
+    var temp2 = 2;
+
+    console.log(temp1);
+    console.log(temp2);
+}
+var temp="hello"
+
+    -- global context runs first but has lower priority than function context 
+
+
+4. Hoisting - doesn't exist since it is just a substitute for memory allocation phase 
+console.log(a);
+a=10;                        Output- undefined
+
+5. Closure

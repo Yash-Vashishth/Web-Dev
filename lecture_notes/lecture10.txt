@@ -1,0 +1,21 @@
+1. Arrow Functions
+ a. similar to normal functions but allows esy usage of functions statements in development and i also clean in ui
+ b. all the steps in the file are correct and can be used as declaration for the functions
+
+2. let, var, const
+    --> JS ES6 (ecmascript 6)- it had only var and no tyoe declaration(eg b=10)
+    --> ES6+ has added let and const to it 
+
+    |                   |       var     |       let     |       const   |
+    |    redeclaration  |       yes     |       no      |       yes     |
+    |  reinitialization |       yes     |       yes     |       no      |
+    |  scope            |   functional  |       block   |       block   | 
+    |   hoist           |   yes         |  yes but DTZ  |  yes but DTZ  |
+
+    DTZ- Dead Temporal Zone --> data not accessible
+
+    if neither var, let or const is specified as type of varible it will be a variable with global scope 
+
+3. Array Methods
+    a. array.forEach(callback_function(a),index) = returns 
+     

@@ -1,0 +1,49 @@
+.parent{
+    border: 2px solid red;
+}
+
+/* .child-1 , .child-2{
+    border: 2px solid red;
+} */
+
+.child{
+    border: 2px solid red;
+}
+
+.child-1{
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    /* margin-right: 10px; */
+    /* margin: 20px 40px;   ---> first value for bottom and top and second for left and right */
+    margin: 20px 40px 60px 80px;   /* first for tap margin, 2nd for right, 3rd for bottom, 4rth for left  <=== clockwise order*/
+}
+
+.parent{
+    width:50vw;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* margin: 0 auto; */
+    margin: auto auto auto auto;
+}
+
+/* .square{
+    border: 2px solid black ;
+    margin: 50px 650px;
+    padding: 40px;
+} */
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black ;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50% ;
+    margin: 0 auto;
+}

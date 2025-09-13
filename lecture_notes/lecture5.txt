@@ -1,0 +1,27 @@
+1. CSS Display
+    display- set display on of div(block element) element to block,inline, inline-block, flex, grid
+        --> in inline elements dimensions like height, width, margin and padding can't work
+
+2. FlexBox Model
+    a. display: flex
+    b. flex-direction,flex-wrap
+    c. justify-content - determine where content is aligned to - space-around, space-between /* Can be used only when display:flex is visible*/
+    d. baseline aligns all the elements of the block element to  the same line
+    d. check the css-tricks.com for flexbox documentation
+
+    Child elements important commands
+    a. flex-grow - in case extra space in viewport is left it will be allocated to elements specified in the ratio specified here
+    b. align-self
+    c. flex-basis - intiial size of element
+    d. flex-shrink - decreases space in specified proportion
+
+3. Grid system 
+    check it in the file display_grid
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr); or grid-template-columns: 1fr 1fr 1fr;     /* Assigns space in the viewport in the given ratio and doesn't overflow even when dimensions of the viewport increase or decrease */
+
+
+4. auto-fit vs auto-fill
+    auto-fit - decreases no. of columns size in the div as dimensions shrink
+    auto-fill - takes in the required dimensions for the elements and leaves empty space when all columns requirements are fulfilled

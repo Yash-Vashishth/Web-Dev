@@ -1,0 +1,20 @@
+1. css units discussion-
+    rem and em- units dependant on parent element features
+
+2. css text decor-
+    text-decoration,text-decoration-stylr,text-decoration-line,text-align,
+    border,border-style,border-color,line-height,letter-spacing,word-spacing
+
+    Margin padding nd alignment
+    border-radius t make a circular div element
+
+3. backgrounds
+    background-image: to insert background into div
+    background-size: contain ; <-- to contain image in given div
+    background-size: cover ; <--- covers whole div with image
+    background-size:  _px _px;
+    background-repeat <--- if size of div larger than image then background is set to repeat. set it to no-repeat if you want
+    background-position: _px _px; 
+    background-position: center; ... and so on positioning 
+
+4. Color Theory

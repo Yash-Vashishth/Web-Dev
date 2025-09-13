@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 5px;
+            max-width: 300px;
+            max-height: 300px;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(5,60px);
+            grid-template-areas: 
+            "a1 a1 a1"
+            "a1 a1 a1"
+            "a2 a2 a6"
+            "a3 a3 a6"
+            "a4 a4 a5";
+        }
+        img{
+            grid-area: a1;
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        .name{
+            grid-area: a2;
+        }
+        .type{
+            grid-area: a3;
+        }
+        .location{
+            grid-area: a4;
+        }
+        .dist{
+            grid-area: a5;
+        }
+        .rate{
+            grid-area: a6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img"><img src="https://b.zmtcdn.com/data/pictures/2/20937942/e4a69208c811dad1f8785b2b02f5c93c_featured_v2.jpg?output-format=webp" alt=""></div>
+        <div class="det name">Mesa</div>
+        <div class="det type">European, Continental, Co...</div>
+        <div class="det location">Lodhi Colony,New Delhi</div>
+        <div class="dist">4.9km</div>
+        <div class="rate">4.6</div>
+    </div>
+
+
+</body>
+</html>

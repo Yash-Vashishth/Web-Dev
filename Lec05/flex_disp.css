@@ -1,0 +1,28 @@
+/* .parent{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.child{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+} */
+ #container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+  #item {
+      width: 100px;
+      height: 100px;
+      border: 2px solid red;
+    }

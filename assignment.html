@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Nav-parent{
+            border-bottom: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .pic{
+            justify-content: flex-start;
+        }
+        .NavContent{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .child{
+            display: flex;
+        }
+        .child a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        .NavContent div:last-child{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="Nav-parent">
+        <div class="pic"><img src="./pic.png" alt=""></img></div>
+        <div class="NavContent">
+            <div class="child"><a href="">Our Story</a></div>
+            <div class="child"><a href="">Membership</a></div>
+            <div class="child"><a href="">Write</a></div>
+            <div class="child"><a href="">Sign in</a></div>
+            <div class="child"><a href="">Get started</a></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

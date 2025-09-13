@@ -1,0 +1,62 @@
+Task 1: Form Creation
+1. <form>- creates a form section
+2. <input>- takes input of user 
+    Also decode type [text/radio(option)/password/checkbox/email/number/colour/date/file]
+    Also decide descriptive text in the box using "placeholder" attribute
+
+3. <button>- creates a button
+4. <select> - creates a dropdown menu and then uses <option> for selecting choices
+5. you can give name and id to the user
+6. <label> is an element used for activating the element whose id is  provided in it.
+
+7. Naming Cases
+    a. CamelCase - myInput (in JS) (used most in MERN stack)
+    b. SnakeCase - my_input (in DB)
+    c. KebabCase - my-input (in HTML/CSS)
+
+8. for <input type="file" accept='jpg'>
+
+9. <form action=''></form> - action is the attribute which redirects the data of form to the required path 
+
+Task 2: Tables
+1. <table> - create table
+    a. border= gives it a defined border
+    b. cellpadding - size of cell with info
+    c. cellspacing - spaces between cells with data
+2. <thead> - heading of table
+3. <tbody> - body of table
+    a. align - attribute to set alignment of data of cell
+4. <tr>    - table row
+5. <td>    - table data
+    a. rowspan - stretching content of same cell over 2 rows 
+    b. colspan - stretching content of same cell over 2 columns
+
+
+Task 3: Display media on webpage
+1. <audio></audio>
+2. <video></video>
+3. <img src>
+4. <iframe></iframe> - embed video from YT
+
+Task 4: Semantic Tags - Tags with meaningful names to create components
+1. <aside></aside>
+2. <footer></footer>
+3. <header></header>
+4. <section></section>
+5. <main></main>
+
+HW- in lec02 try to create a bio data form as shown in homework file
+    and also the table file shown in form 
+
+Task 5: CSS Introduction
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+4. CSS (refer to file for details)
+    a. Element Selectors -
+    b. Id selector - 
+    c. Class Selectors
+    d. Universal Selector - 
+    e. Attribute Selectors - 
+    

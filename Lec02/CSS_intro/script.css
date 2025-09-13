@@ -1,0 +1,24 @@
+/* Element Selector */
+p{
+    color:red;
+    color:blue;
+}
+h1{
+    color:aqua
+}
+
+/* Class selectors */
+.favmovie{
+    color:yellow;
+}
+
+/* Id selectors */
+#special-para{
+    color:green;
+}
+
+/* Universal selector */
+
+*{
+    /* border:2px solid black; */
+}

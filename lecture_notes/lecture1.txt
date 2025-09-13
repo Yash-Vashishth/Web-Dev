@@ -1,0 +1,47 @@
+Operation Commands
+1. pwd -> display path/directory of git bash
+2. ls-> list all files/folders in the current directory
+3. cd Desktop/ -> change directory in git bash to desktop
+4. cd .. -> exit current file 
+5. mkdir -> make directory in the current location
+    usage example - 1. mkdir lec01
+                   2. mkdir lec01 lec02 lec03 lec04
+6. code -> command to open file/folder in vscode 
+    usage example - 1. code . - opens current open directory in vscode
+                   2. code lec01- open file/folder in directory in vscode
+7. touch -> create file in the directory
+    usage example - 1. touch notes.txt - creates a text file notes in the given folder/directory
+                    2. touch index.hrml - creates a html named index 
+8. rm -> removes file from folder/directory
+9. rm -r -> removes the folder/directory
+10. clear - clear bash (ctrl+l)
+
+HTML
+---ctrl+ / - make the line comment/ does not render the specific line since it converts it into commented out line
+
+---elements of two types
+    1. block elements-  take all the space of the viewport(full webpage breadth) eg. - <div>
+    2. inline elements- create divisions in the page's viewports for ease of UI improvement eg.- <span>
+
+---tgs introduced -
+    <html>,<head>,<title>,<h1,h2,h3,h4,h5,h6>,<p>,<div>,<span>,<br>,<hr>
+
+---typing '!' in the html file gives a template with all the commands already given
+---charset used in web development files is UTF-8. It comprises of ASCII characters as well as many other characters codes
+
+--- list
+    1. Ordered list (<li type="" start=""></li>)
+    type= A/a/1  start= (specify the point/no to start at)
+    2. Unordered List (<ul type=""></ul>)
+    type= square/disc/circle
+
+--- Anchor tag (<a href=""></a>)
+    Provide link to go to site
+
+    -> ./ - specify file in same directory
+    -> ../ - specify file one step outside current open file path/directory
+
+--- HTML Attributes
+    1. (id="") - unique id for a specific tag
+    2. (class="")- classification of some tags into the same class
+    

@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid yellow;
+    height: calc(100vh-4px);
+    background-color: aquamarine;
+}

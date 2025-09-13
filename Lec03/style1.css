@@ -1,0 +1,63 @@
+/* : --> Psuedo Classes */
+/* :: ---> Pseudo Elements */
+
+a:link{
+    border: 2px solid blue;
+    
+}
+
+a:visited{
+    color: aqua;
+}
+
+a:hover{
+    color:black;
+    border:none;
+}
+a:active{
+    color:red;
+}
+
+h2:hover{
+    color:red;
+}
+
+/* ul li:first-child{
+    color:red;
+}
+
+ul li:last-child{
+    color:green;
+}
+
+ul li:nth-child(4){
+    color:aqua;
+} */
+
+ul li:nth-child(2n){
+    background-color: rgb(66, 66, 66);
+}
+
+ul li:nth-child(2n+1) {
+    background-color: rgb(184, 181, 181);
+}
+
+p::first-letter{
+    font-size: 22px;
+}
+
+ul::after{
+    content: "👏";
+}
+
+ul::before {
+    content: "✔";
+}
+
+li::before{
+    content: "(^///^)(^///^)"
+}
+
+li::after{
+    content: " 📞";
+}

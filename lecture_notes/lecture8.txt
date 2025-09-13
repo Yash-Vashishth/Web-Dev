@@ -1,0 +1,58 @@
+1. Tailwind CSS - compaction of basic CSS using bootstrap to minimize commands
+
+2. Javascript
+
+    a. Language typing-
+        i. Strongly typed - C++, Java, Golang, Ruby
+        ii. Weakly typed- Javascript, Python
+
+    b. Datatypes of Variables
+        i. Primitive - Boolean, string, number, undefined, null
+        ii. Non-Primitive - Object, Array Function
+    
+    c. In Primitve , value is copied and transferred to location
+    d. In Non- Primitive, reference location or address is shared
+
+    e. Array-
+        It is a collection of values which can be same as well as different types of values.
+        It follows LINKED LIST type of array operation
+
+        arr.shift()- removes an element from the start of Array
+        arr.unshift()- adds an element from the start of Array
+
+        arr.push() - add single element or grp
+        arr.pop() - remove single element or grp
+
+                                                                    |--->applicable only if there's 0 in the second argument
+        arr.splice(start pstn, no. of elements to remove , elements to be added); --> custom element additon and deletion
+
+        arr.join(element joining the array elements) - gives an output as a combination of array elements with the joining element in between all the elements
+
+    f. String-
+        uses "", '', ``
+        console.log(typeof char1)
+         
+        var name="Yash";
+        var str= `My name is ${name}`;
+
+        toLowercase() -
+        toUppercase() -
+        trim() -
+        trimStart() -
+        trimEnd() -
+        split() -
+        concat()-
+        slice(startingIndex,EndingIndex+1) -
+        --eg. 1. slice(0,5) - 
+              2. slice(6,s.length); - display from 6 to last index of string s
+              3. slice(6) display from 0 to 5 index
+
+        substring() - 
+        --used in both positive and negative manner 
+        -- eg. var text="Mozilla"
+               1. console.log(text.substring(2,5));
+               2. console.log(text.substring(5,2));
+
+        replace() - 
+        replaceAll() -
+

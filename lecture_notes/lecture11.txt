@@ -1,0 +1,30 @@
+1. Object Destructuring
+2. Concatenating two arrays together with both spread operator and with concat()
+    const arr1=[1,2,3,4]
+    const arr2=[5,6,7,8]
+
+    //const arr3= arr1.concat(arr2);
+    const arr3=[...arr1,...arr2]
+
+    console.log(arr3);
+    output: [1,2,3,4,5,6,7,8]
+
+***Note- 
+    1. JS is a single threaded synchronous language. It has only one colstack
+    2. View Engine shows us the HTMl and CSS. THe actua APIs, JS functionality, and state Loading is handled by Web APIs.
+
+3. Asynchronous Function-
+    Functions/tasks/memory allocation are executed simultaneously together
+
+4. Synchronous Function-
+    Functions/tasks/memory allocation is read and executed in an orderly manner from top to bottom line-by-line
+
+5. Execution of function occurs in 4 sections-
+    a. colstack- this is where the execution occurs
+    b. WebAPIs - medium used for making js/ function calls , waiting pt for functions to be executed 
+    c. callback queue - order of execution is maintained in this 
+    d. event loops - refreshes the colstack everytime to check if its empty or not. If empty,
+                    callback queue is checked for any remaining function or memory calls
+
+
+

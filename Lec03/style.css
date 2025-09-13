@@ -1,0 +1,26 @@
+
+/* Descendent Combinator */
+p span{
+    font-weight:bold;
+}
+
+/* ol li span{
+    color:blue;
+} */
+
+.list li span{
+    color: green;
+}
+
+/* div > p {
+    color:orange;
+} */
+
+/* Then means the li element after the previous li element */
+li+li{
+    color:blue;
+}
+
+li~li{
+    color: red;
+}

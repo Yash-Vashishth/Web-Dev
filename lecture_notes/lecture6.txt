@@ -1,0 +1,25 @@
+1. Positions
+    a.static-
+    b. relative
+        -changes planes without disturbing the order specified in html
+        - changes in position are with respect to current position
+    c. absolute
+        - changes plane and shifts the position of content below it upwards and disturbs order
+        - changes in position w.r.t viewport 
+    d. fixed- fixes position of element at a single point of the screen
+    e. sticky- when the element reaches the position value specified(top, bottom, right or left) then it sticks to that position and remains there while page is scrolled down and when it's scrolled up again then it regains its normal position 
+
+    --> top, bottom, left ,right positions can be specified
+    -->z-index is an attribute to bring content of an element forward or backward into background eg. z-index: 20px;
+
+NOTE:
+    absolute positions with respect to viewport size. if we give the parent element a position:relative; attribute changes in absolute element willbe made w.r.t relative element position
+
+2. min_max
+-adjusts content w.r.t viewport size
+- provides minimum and maximum size for the element to be expanded or compressed to for viewing
+- min-width, min-height, max-width, max-height
+
+3. Responsive Design
+
+--@media(){ } is used to specify change in properties on reaching the parameter seen in round brackets

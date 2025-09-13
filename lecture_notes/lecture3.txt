@@ -1,0 +1,50 @@
+1. Advanced Selectors
+    a. Descendant Combinator (space)
+    b. Immediate Sibling (+)
+    c. General Sibling (~)
+    d. Immediate Child (>)
+
+2. Pseudo Selectors
+    a. LVHA
+    b. Link, visited,hover,active
+    c. emoji adding: "windows button" + .
+
+3. Box Model
+
+4. Specificity- inline CSS>internal CSS>external CSS > id > class > element > * (generally)
+
+    special :
+    eg. 
+    1. <link rel="stylesheet" href="style3.css">
+    <style>
+        p{
+            color:blue;
+        }
+    </style>
+
+    color will change to blue
+
+    2. <style>
+        p{
+            color:blue;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style3.css">
+
+    color will change to whatever is specified in the style3.css file
+
+5. CSS Units
+    a. absolute (px,mm,cm,in)
+    b. relative (vh,vw,%,rem,) ---
+        vh-viewport height
+        vw-viewport width
+        rem- change element size w.r.t root element
+        em- change element size w.r.t parent size
+        eg. div{
+            height: 100vh; /* 100% of viewport height */
+            width: 100vw;
+            font-size: 2 rem /* font size = 2x16 = 32 px*/
+        }
+
+6. default HTML font-size --> 16px

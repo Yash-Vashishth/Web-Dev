@@ -1,0 +1,30 @@
+/* h2{
+    border: 2px solid black;
+    text-align: center;
+} */
+
+h2{
+    width:500px;
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    /* text-decoration:dashed;
+    text-decoration-line:underline;
+    text-decoration-style:solid; */
+
+    text-decoration: underline;
+    text-decoration:none;
+}
+
+a{
+    text-decoration: none;
+    border:2px solid black;
+}
+
+p {
+    font-size:14px;
+    font-style: italic;
+    font-weight: 900 ;
+    /* font-family: sans-serif; */
+    /* font-family: "Roboto" ,sans-serif;  , tells that if Roboto isn't available on device then use sans-serif */
+    line-height: 18px;
+}
