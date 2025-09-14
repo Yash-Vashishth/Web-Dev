@@ -1,0 +1,5 @@
+1. Prototypes Revision
+    --Function,Boolean,Array,Object, Number,String etc are all prototypes perviously defined in the webAPI section and under window
+    --chaining of two different prototypes to assign values from one to another
+    --Eg  Binding of two different prototypes to utilize their respective funtions tgether
+        Cuboid.prototype = Object.create(Rectangle.prototype);
