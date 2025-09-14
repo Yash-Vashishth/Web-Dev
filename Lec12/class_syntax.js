@@ -5,7 +5,19 @@ class Rectangle{
     }
 
     area() {
-        return this.length*this.breadth
+        return this.length * this.width;
+    }
+
+    get getLength() {
+        return this.length;
+    }
+
+    get getWidth() {
+        return this.width;
+    }
+
+    set setWidth(width) {
+        this.width = width;
     }
 }
 
@@ -19,3 +31,6 @@ class Cuboid extends Rectangle{
         return this.breadth * this.length * this.height;
     }
 }
+
+const r = new Rectangle(4,5);
+console.log(r.area());

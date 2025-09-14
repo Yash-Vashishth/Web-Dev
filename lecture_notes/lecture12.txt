@@ -3,3 +3,24 @@
     --chaining of two different prototypes to assign values from one to another
     --Eg  Binding of two different prototypes to utilize their respective funtions tgether
         Cuboid.prototype = Object.create(Rectangle.prototype);
+    
+2. Class Syntax
+    --defined in java language way
+    --with 'set' keyword we set the value of parameters passed in the class
+    --with 'get' keyword it becomes a property instead of a function
+        eg. get Length(){
+                return this.length
+            }                                   is called by r.Length
+    --with 'static' keyword it becomes a function
+        eg.  static Length(){
+                return this.length
+            }                                   is called by r.Length() 
+
+3. Callbacks
+    -- logic is a callback function used while defining the property of the function. It is used as a substitute to the function that will
+        actually be passed in the argument.
+
+4. Ways to write async function in synchronous-
+    a. Callbacks
+    b. Promises
+    c. async-await
