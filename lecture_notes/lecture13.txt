@@ -1,0 +1,22 @@
+1. Promise 
+    a. It is an eventual object that wil be initialized after it executes a previous query or after calling the same query 
+    b. It has 3 steps-
+        i. Pending
+       ii. Fulfill
+      iii. Reject
+    c. .then() -  executed if the query in promise is resolved 
+    d. .catch()-  executed if the query in promise is not resolved 
+    e. Promise gets a different queue in the webAPI section known as the microtask queue 
+    f. It doesn't block the thread of the function and executes in the background
+
+2. Callback to promise
+    download()
+    .then(compress)
+    .then(upload)
+    .then((finalUrl) => {
+        console.log(finalUrl);
+    })
+    .catch((err)=>console.log(err));
+
+    a. It automatically takes the returned value from above Promise as another Promise for which another then is used again
+    b. All functions used above return a  -->(new Promise())<---  result which helps in maintaining the flow 

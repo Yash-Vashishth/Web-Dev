@@ -19,6 +19,7 @@ function upload(file,cb) {
     },4000)
 }
 
+//callback hell
 //wrapper function passed into the other function to execute the required function in the download part without limiting the case
 download(function (downloadedfile) {
     compress(downloadedfile, function (compressedFile) {
