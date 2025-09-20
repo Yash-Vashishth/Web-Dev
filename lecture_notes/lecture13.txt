@@ -20,3 +20,39 @@
 
     a. It automatically takes the returned value from above Promise as another Promise for which another then is used again
     b. All functions used above return a  -->(new Promise())<---  result which helps in maintaining the flow 
+
+3. Async await
+    a. async keyword at start allows treatment of function as an async function with no wasted to time
+    b. await keyword in front of a return statement doesn't allow execution of function till the ine of function hasn't generated an output/isn't executed
+
+4. DOM
+    a. DOM-Document object Model 
+    b. webAPI - setTimeout(), Document
+    c. js=> document API => can acess HTML elements in object from
+    d. html=> tree-like structure
+    e. css=> Kebar getElementbyClassName
+
+    d. Selector->
+        i. document.getElementbyId()
+       ii. document.getElementbyClassName()
+      iii. document.getElementbyTagName()
+       iv. querySelector()
+        v. querySelectorAll()
+    
+    e. <Class/Id/Tag Name>.innerText - returns/changes the text inside an element
+    f. <Class/Id/Tag/const Name>.innerHTML - returns/changes the HTMl inside an element
+    g. <Class/Id/Tag/const Name>.getAttribute("<Attribute here>")
+    h. <Class/Id/Tag/const Name>.setAttribute("<typeof Attribute here>","<newAttribute here>")
+    i. <Class/Id/Tag/const Name>.hasAttribute() - returns true/false if it has any Attribute
+
+    j. classList
+        i. .add()
+        ii. .remove()
+       iii. .toggle() - add/remove classes if they aren't/are there
+        iv. .contains() - true/false if it has any class
+    
+    k. Traversal
+        i.  .parentElement
+       ii.  .nextElementSibling
+      iii.  .prevElementSibling
+       iv.  .children
