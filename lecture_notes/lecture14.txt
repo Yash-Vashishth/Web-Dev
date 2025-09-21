@@ -1,0 +1,37 @@
+1. DOM events
+    a. onclick
+    b. addEventListener("event_type",function())
+        i. click
+       ii. dblclick- doubleclick
+      iii. mouseenter - mouse enters into an element
+       iv. mouseleave - mouse leaves from an element
+        v. contextmenu - when we right click on an object
+       vi. keydown    - pressing the key down
+      vii. keyup - on releasing a pressed button
+    
+    c. form tag reloads the page on every submission to gain input again
+    d. .preventDefault() - doesn't allow removal of data in input area on form submission
+    e. <elementName>.target --> this performs action on the targeted <elementName> 
+
+2. Event-Lifecycle
+    a. if nested divs are used and a click event is added to the innermost one then all of them are counted as clicked
+       since it is a part of the element
+    
+    b. Process
+        i. First it checks/traverses/moves downward to where event click occured ----> Event Capturing
+       ii. order --> html -> body -> parent -> child -> grand-child
+      iii. if it's grand-child element it checks if it has any activity function and executes it 
+       iv. then it goes upwards and back in the same path towards start -----> Event Bubbling
+        v. When it goes one step upward to child it then executes the activity function inside it too
+       vi. same occurs for parentElement
+
+    c. <eventName>.addEventListener("click",(e)=>{
+
+        },false)     // normally propagation value is set to false which here, on click will change to true same happens for div outside it 
+
+    d. if it is set to true in the js file itself, activity function will be called at the the time of event Capturing
+       then the order of calling can change
+
+    e.  <eventName>.addEventListener("click",(e)=>{
+            e.stopPropagation()
+        },false)    ---> this stops the propagation events order when clicked on 

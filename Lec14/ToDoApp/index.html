@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todo-app">
+    <header>
+      <h1>My Todo List</h1>
+    </header>
+
+    <div class="input-section">
+      <input type="text" placeholder="Add a new task..." >
+      <button >Add</button>
+    </div>
+
+    <ul class="todos-list">
+      <li class="todo-item">
+        <input type="checkbox" class="btn-complete"> </input>
+        <span class="todo-text"> Example task 1</span>
+        <span class="todo-actions">
+          <button class="btn-delete" >✖</button>
+        </span>
+      </li>
+
+      <li class="todo-item completed">
+        <input type="checkbox" class="btn-complete"> </input>
+        <span class="todo-text"> Completed task example</span>
+        <span class="todo-actions">
+          <button class="btn-delete" >✖</button>
+        </span>
+      </li>
+
+      <li class="todo-item">
+        <input type="checkbox" class="btn-complete"> </input>
+        <span class="todo-text"> Example task 2</span>
+        <span class="todo-actions">
+          <button class="btn-delete" >✖</button>
+        </span>
+      </li>
+    </ul>
+
+    <footer>
+      <span class="items-left">2 items left</span>
+    </footer>
+  </div>
+</body>
+</html>

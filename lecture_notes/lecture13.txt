@@ -38,6 +38,7 @@
       iii. document.getElementbyTagName()
        iv. querySelector()
         v. querySelectorAll()
+       vi. document.createElement("<elementType>")
     
     e. <Class/Id/Tag Name>.innerText - returns/changes the text inside an element
     f. <Class/Id/Tag/const Name>.innerHTML - returns/changes the HTMl inside an element
