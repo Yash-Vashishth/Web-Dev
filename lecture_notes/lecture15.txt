@@ -1,0 +1,40 @@
+1. Revision of functions used in javascript
+2. TO Do List control programming
+3. Ajax and APIs
+    a. storagr of two type
+        i. Client-side - local storage, sessional storage
+       ii. Server-side - file system, session, , database
+    b. IP - used for hosting code
+        i. Public
+       ii. Private
+    c. Right now temporary storage is created in RAM and the file in VS Code is executed. 
+    d. Waterfall Effect - on typing in browser to open google.com
+        i. Request to IP is sent through Server
+       ii. Server sends back the html, cs and js file for the page itself 
+      iii. html file is secuted  then on occurence , css and js are also executed. This opening of files on command is called Waterfall Effect
+    
+    e. APIs hit server requests when information is provided by user to get an appropriate response for comparison with DB
+    f. AJAX 
+        i. async JS and XML (Extensible Markup Language)
+       ii. Provides datain format 
+      iii. For a request to server it directly Provides the html and related cs and js files altogether
+       iv. server side rendering 
+    
+    g. APIs
+        i. 
+       ii. Indirectly requests the data from the server DB instead of directly as done in AJAX
+      iii. IT is a layer between client and server which provides data in json(instead of XML in AJAX) format
+       iv. Data is thenn executed in DOM format 
+    
+    h. SEO- Search Engine Optimization. It determines the rendering speed and data compilation times. The ones that have SEOs are shown first to last depending on their speed.
+
+    i. A request has the format of with a header and a body
+    j. A request also has-
+        i. method - GET, POST(create), PUT(update- replace with new ) , PATCH(update- with changes to existing ), DELETE
+       ii. path - endpoints - request src 
+
+    k. .fetch(`${baseURL}`/users)
+4. Convert Object to json through ---> JSON.stringify(user)
+5. Convert json to Object through --->JSON.parse(user)
+6. JSON gives a string output to a patch of information provided and also convert functions to string
+7. This is done as a security and safety measure just in case to prevent client from running the functions until parsed

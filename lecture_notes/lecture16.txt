@@ -1,0 +1,25 @@
+1. Version Control System - code contribution handling system
+2. Limux ---> Open Source 
+3. GIT CHEAT SHEET ---github publications 
+4. Commands-
+commit---> version of file synchronization with changes 
+    a. git init -  initialize empty Git repository
+    b. git status - check type of branch we are on 
+    c. git add
+    d. git commit -m "{comments}"   --- commit in master branch
+    e. git config --global [user-name/email-address]
+    f. git log  --- commits, files , works today etc.
+    g. git checkout<commit.id / branch-name> opens the branch with its versio of code (generally set to master)
+    h. git branch <branchname>
+    i. git remote add origin "{URL of repository}"
+    j. git remote --v 
+    k. git push origin master
+    l. git clone <repo URL>
+    m. code <name>  - open code 
+
+5. Untracked and Commited section 
+6. to exit git log press Q
+7. Vim Commands
+    a. vim ____.txt -- create a file with specified name and add text through terminal itself
+        to exit writing the txt file press 'Esc'
+        then ;q-- quit without saving  and  ;w- write this into file and   ;wq- write this and quit this mode 

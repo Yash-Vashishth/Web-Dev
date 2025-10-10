@@ -1,0 +1,42 @@
+1. Introduction to node
+    i. nodejs is an environment to run js files in 
+   ii. It is based on the v8 browser engine in Chrome 
+  iii. The Js engine delegates instructions to browser for running the backend calls and APIs. Same way
+       node.js calls the browser for executing backend and other API calls.
+   iv. it only replicated the v8 engine till what was necessary. eg it dowsn't have any functionaliy for document. command
+
+2. Compiler vs Runtime Environment 
+    Compiler translates source code of high-level programming language into machine code before execution
+    Runtime environment provides library,services and resources to support execution 
+
+    nodejs is a runtime environment
+    Java is a compiler 
+
+3. nodejs command 
+    i. node <filename>  - run the specific file after navigating to its destination folder through node.js
+    ii. exit - exit the nodejs terminal
+   iii. setInterval(()={},interval_time) - allows setting an interval for execution of any command in it
+    iv. clearInterval(interval_name)
+
+4. import_and_export 
+   -- js files are divided into modeules for ease of access, management .
+
+5. file system
+    --- we will be utilizing 2 commands from this - read and write (in the async form mostly)
+    --- fs.writeFile(file_path,data,callback_function)   data should be in string
+    --- __dirname gives the path of the current file in which we are working in
+    --- fs.readFile(file_path,encoding,callback_function) -encoding is generally utf-8
+                                                          - data is obtained in the callback_function
+
+    --- if we use  require("fs/promises") then we can use callback_function in .then() and async call await in that 
+
+6. path module gives the path.join(address1,address2) function used to write a new path for navigation for changes
+
+7. Intro to npm
+    -- consists of packages and dependancies that node has which can be installed 
+    -- npm -v 
+    -- npm init - intialize/create package with entrypoint(from where it will execute backend) - generally server.js
+    -- package.json ---> responsible for execution of backend and initial nodejs command execution
+    -- package-lock.json ---> responsible for managing dependancies and their information as used in the file 
+
+8. .gitignore file is created to choose what to ignore when updating the main or any other branch of the code eg. node_modules and package-lock.json
