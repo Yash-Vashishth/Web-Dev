@@ -1,0 +1,37 @@
+1. Revision of CRUD operations 
+    -- file system is not scalable , efficient , maintaining it is a hassle on service level.DB is used much more here  
+    -- Database of two types-
+        -- SQL - need to define schema and a structured query for storing data. eg mysql,postgres
+        -- NoSQL - no schema needed and json tye data storage system. eg. MongoDB
+    
+2. MongoDB
+    - username - yashvashishth  password- 1234567890
+    -    DB<---(n collections)---collection<---(n documents/data)---document/data
+    -commands (written after db.<collection_name>.)
+        - insertOne( {param1:dt1,param2,dt2} )  ,  insertMany({document array})
+        - findOne({parameter_1 : value1 , parameter_2 : value_2}) ,find({parmater array})
+        -updateOne(),updateMany()  eg 
+            eg. db.movies.updateOne(
+                    {_idname : ObjectId(id)} ,
+                    {$set : {param1: value}}
+                )
+        - deleteOne(),deleteMany()
+    
+    -in MongoDB shell
+        - show dbs -- shows the database that can be accessed 
+        - use <dbname> -- change diretory to database name given
+        - then use commands above to add, update, delete data in database 
+
+    -go to mongodb.com/docs/development
+    - to add two parameters  other than $gt and $lt we want limit
+        we use $and to make {$and : [ {year: {$gte: 2008} } , {year: {$lte: 2010} } ] }
+
+3. Mongoose
+    - ODM (object document mapper )
+    -  ********IMPORTANT INTERVIEW QUESTION*********   JSON vs BSON - working and how they are relaed in mongodb
+
+    - create schema using mongoose.schema
+    - mongoose.model gives the defined constant a class with the schema as defined by mongoose.schema
+
+4. install and use dotenv 
+5. create .env file system 
