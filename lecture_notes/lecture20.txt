@@ -1,0 +1,37 @@
+1. Relationships
+    a. one-to-one : Relating one elemenet of one database table to one element of any other database table
+    b. one-to-many / many-to-one : one elt. to more than one elts of another table
+    c. many-to-many : multiple relationships between all elts. of both tables
+
+2. ECommerce sites have backend for-
+    - Users
+    -products
+    -reviews
+    -cart/wishlist
+
+3. Schema and Models
+    Schema is the skeleton of the model 
+
+4. isActive: Boolean is a Schema property made when we want to check when the socket connection has been established 
+
+5. Important interview question   
+    Without using Update and delete Method (app.update and app.delete) can we achieve the  update and delete operation
+
+6. const app= express() --> creates a single instance of the server . if we create it in the routes again (since routes doesn't have a "app" connection ) 
+                            it will create a new express instance which will be different from the prevous instance
+
+    Solution ----> import userroutes into index file and then say app.use()
+
+7. We create a single router file containing routes for all other actions for database to reduce strain on the index.js file
+
+8. Error status
+    -200 OK status
+    -201 created (succesfully)
+    -400 Frontend / Client Side Error 
+    -401 Unauthorised 
+    -404 Not Found
+    -500 Server Error
+
+9.  findbyId()
+    findbyIdAndUpdate()
+    findbyIdAndDelete()
