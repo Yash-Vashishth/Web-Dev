@@ -1,0 +1,26 @@
+EXPRESS.JS INTRODUCTION
+
+1. Library v/s Framework
+  a. Library is editable command(s)/file(s) that can be overwritten/used/have new additions to use different functionalities in the code 
+  b. Framework is a non-editable set that specifies te orer or commands provided to user for usage in the code.
+
+
+2. Many other frameworks are there to be used by the user like Fastify and NestJs
+3. In previous versions for installation of express, use npm i express --save 
+    We now just use npm i express
+4. PORT 
+5. response is complementary as well as the important
+6. app.listen() listens to server request on app and is the generating/ processing  requst and respose 
+7/ .send and .sendFile() are different
+
+8. use netstat -ano | find {port no.} for finding out the TCP/IP Port working for the current PID 
+    " taskkill /PID <PID> /F " is used to forcefully kill the task that is being executed at the pid used (found using above) 
+
+9. CRUD Processes - Create, Read , Update, Delete
+    a. Create - using "POST" method
+    b. GET (Bulk)
+    c. GET (single)
+
+10. If there are two incoming requests, distinguish between them through route or method. They can have either route same , or vice versa 
+11. app.post is used to inpupt/change 
+12. body-parser is used to to parse body data received from req.body
