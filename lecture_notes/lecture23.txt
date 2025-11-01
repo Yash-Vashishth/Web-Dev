@@ -1,0 +1,68 @@
+1. Authentication and Authorization
+    -- Authentiction : deals with the identification
+    -- Authorization : deals with the tasks to perform 
+
+    --passwords are encrypted before being saved in DB
+
+2. Encryption and Hashing
+    -- Encryption : 
+        - This is when a data string is converted into a series of numbers of letters legible to only the othersystem which recognizes this stream
+        - THis is a 2 way operation (can be decrypted)
+    -- Hashing 
+        -- This is a 1 way operation (not decipherable)
+        - used in password storing
+        -- it slength remains fixed no matter th length the data
+        --small change in i/p, large change in o/p 
+        -- same input gives the samepii
+
+    -- Use bcrypt library for passowrd hashing 
+    -- Salt ad SaltRounds
+        - Salt is the unique string added to password to enhance safety when password decryption is the same
+        - SaltRounds - no;. of times data is hashedper sec or time/hash
+    
+    --process.env. SALT_ROUNDS = (no.of saltRounds)
+    
+    --bcrypt
+        - .hash()
+        -.compare()
+    
+    -- jwt (JSON Web Token)
+        - encryption
+        - npm i jsonwebtoken
+        - .sign({},process.env.JWT_SECRET) -- creates a web token at frontend level
+        - .verify(token,process.env.JWT_SECRET)
+    
+    -- req has 2 parts - header and body
+    -- tokens are contained in the req.headers section
+
+3. Designing Data intensive Applications - Martin
+
+4. Checks when returning obj item 
+    obj ={
+        a:{
+            b:{
+                c:{
+                    d:{
+
+                    }
+                }
+            }
+        }
+    }
+    -- if at some point obj.a.b returns undefined then error will be returned at obj.a.b.c
+    -- To establish checks without using loop we use it as obj?.a?.b?.c
+
+5. Single Sign-On Applications
+6.Token v/s Refresh Token
+    -- Tokens have an expiry . for eg. 10min or 15min
+    --Refresh Token 
+
+7. Third PARTY Authentication
+    - In this hashing occurs , first at the main website where information is to be requested from.
+    - Ecommerce backend sends two APIs , which are converted in base64 encoding to a token which is sent to the website with details for logging in which sends the "OK" signal for login
+    - OAuth is used in communication between 2 backend services 
+
+8. HW 
+    - Create CRUD for review,routes
+    - create middleware for checking in product controller  for seller id before allowing creation of product 
+    

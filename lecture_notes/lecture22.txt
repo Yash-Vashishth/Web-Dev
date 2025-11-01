@@ -1,0 +1,51 @@
+1. For Backend we need to create 
+    a. Database (preferably cloud based) connection
+    b. Models (for data input)
+    c. routes 
+    d. controllers (functions used while taking in data  input)
+    e. Utils - common functions
+
+2. module.exports is an object so to avoid circular dependency error we use it in func definition to avoid error 
+
+3. Circular Dependency
+    Let there be files A and B.If A uses functions of B and B uses functions of A then it is a cirular dependency
+    Sometimes these can cause an error where functions used in either direction are shown as null values during usage 
+
+    to avoid this we use module.exports.(func_name) to avoid this. In next.js we use fowardRef()
+
+4. For passing image into backend we use Multer library to pass image link into backend
+
+5. for storing images and getting links to use in backend we use
+    a. S3Bucket (AWS)
+    b. Block Bucket (Azure)
+    c. Cloudinary (Free service, login based)
+
+6. service : calls db interaction functions into controller 
+    repo : repository layer interaction which consists of all the different queries and response cases for interaction with db
+
+7.   req            --->            --->         --->
+            router      controller      service     repo
+     res           <---            <---         <---
+
+8. Middleware
+    -->Acts between route and controller
+    --> Has response to both req and res 
+    --> exexcutes tsk that need to be done before controller function is executed
+
+    --> Express is a series of mdiddlewares
+
+    --> executes before controller
+    --> function loggin(req,res,next){
+        console.log("hello");
+        return res.send()
+        next();
+    }
+
+    --> next() - is used to execute the next function/controller/mdiddleware.
+    --> either mounted in router in unput calling or in the 
+    
+9. Joi and Zod are two different ibraries used in validating requests, schema desciption and data validator
+10. Joi --> application-level validation        while        Mongoose --> datbase-level-validation 
+
+11. In case of error present in details entered at middleware level it shows error at frontend level itself with 400 error
+12. Joi has its own schema which is passed for checking the validity of the the data passed at frontend level

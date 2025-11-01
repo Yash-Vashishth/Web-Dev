@@ -45,9 +45,14 @@
     e. It helps in saving the memory used in creating new objects from the constructor function again and again
 
 
+
 8. Lexical Environment= this Environment+ parent Environment
                         eg. f1{f2{f3{}}};
 
                         f3 env= f3+ f2 env
                         f2= f2+f1 env
                         f1= f1+ source env                        
+
+9. Closure 
+    It is an object that is bundled together with returned function that conatains all the used variable of lexical environment
+    

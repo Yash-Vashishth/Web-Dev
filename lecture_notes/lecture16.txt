@@ -22,4 +22,7 @@ commit---> version of file synchronization with changes
 7. Vim Commands
     a. vim ____.txt -- create a file with specified name and add text through terminal itself
         to exit writing the txt file press 'Esc'
-        then ;q-- quit without saving  and  ;w- write this into file and   ;wq- write this and quit this mode 
+        then :q-- quit without saving  and  :w- write this into file and   :wq- write this and quit this mode 
+    
+    b. press i to enter the the file through the terminal and add the necessary commnds 
+    c. to forcefully exit the vim text without changing the file or not saving the file :q !  ( ! is used for override )
