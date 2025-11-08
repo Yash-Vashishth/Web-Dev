@@ -1,0 +1,40 @@
+1. Intro to Sockets (k now clients-erver architecture and req-res scheme)
+    - If failure on first requet call, HTTP cnnot send res without request being sent again
+    -Longpolling 
+        -- When code is sdent first for execution it is ust accepted by the server at first before execution.
+        -- Then the client requests from the server repeatedly to get a negative response till the code is executed successfully
+        -- this repeated server call is called  HTTP Longpolling.
+        -- Longpolling slows down the connection b repeated calls and is used only when short term connection is required.
+    
+    - Websockets
+        -- Instead of repeated HTTP calls , a pipeline is created to allow data to allow a dedicated connection between client and server
+            to make simple single call to send or retrieve data
+    
+
+2.  --Nestjs (express|fastify with class definition)
+    -- we use http server because it is a pure node based library
+    -- app.use(express.static()) -- Middlewre that is used to get files from frontend without adding route at the backend 
+
+3. Socket io
+    -- .on() - to listen for input , .emit() - to send data as output
+    -- definition of socket in index.html is used (when we don't use axios to access socket and instead want a connection to )
+        <script src="/socket.io/socket.io.js"></script>
+    
+    -- socket is then used in the js file with other frontend functionalities.
+    -- Socket function defined in index.js is defined again at the script.js(client) level again to allow client to understand function used in server at client-level
+
+3. Cors is a security policy used to determine which server (backend/frontend) can access our server
+    --  cors: {
+            origin: "*"                     
+        }
+        This * means that all global servers are allowed access to this.
+    -- we specify different links in this afterwards
+
+4. React Introduction 
+    -- Webpage(single static page)------->Website(n static webpages)-------> webapp(n dynamic webpages)
+    -- 1. Reusable components
+       2. Hooks (States,Effects)
+       3. Virtual DOM
+       4. SPA (Single Page Application)
+       5. Dynamic Rendering
+       6. Props

@@ -13,7 +13,7 @@
         which delays the process and is not controllable
     --> It is performed in stages 
     ---> in mongoDB,we create a Pipeline,
-        [
+        {schema_name_as_exported}.aggregate[
             {
                 $match:{
                     //write the conditions for the filter
@@ -67,7 +67,6 @@
                     localField: "{field present in the current table related to the other table}" / "local key"
                     foreignField: "foreign key",
                     as: "{name of table parameter which will have the data from the other table}"
-
                 }
             }
         ]
