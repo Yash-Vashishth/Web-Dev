@@ -16,7 +16,7 @@
     e. APIs hit server requests when information is provided by user to get an appropriate response for comparison with DB
     f. AJAX 
         i. async JS and XML (Extensible Markup Language)
-       ii. Provides datain format 
+       ii. Provides data in format 
       iii. For a request to server it directly Provides the html and related cs and js files altogether
        iv. server side rendering 
     

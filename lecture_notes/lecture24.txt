@@ -1,0 +1,73 @@
+1. Important function
+    --->.populate() - is used to fill more details in the required field 
+    ---Required syntax
+        ->  populate({path: "{destination field where values are needed}" , select: "{write details that yu want from the schema here}"})
+
+2. Review Section creation
+3. Wishlist property created in User model and creating a seperate route, controller for its access
+4. HW -
+    create cart wala route ,controller 
+
+5. Aggregation Pipeline-
+    --> When we normally call the data from DB to fronend dashboard, it comes but there is an error in it 
+        which delays the process and is not controllable
+    --> It is performed in stages 
+    ---> in mongoDB,we create a Pipeline,
+        [
+            {
+                $match:{
+                    //write the conditions for the filter
+                    //for eg. age: {$lt:50}
+                }
+            },
+            {
+                $project:{
+                    //write what parameters we need from the db table in question
+                }
+            },
+            {
+                $set:{
+                    //add parameters to table data elements
+                }
+            },
+            {
+                $unset:{
+                    //remove parameters from table data elements
+                }
+            },
+            {
+                $group:{
+                    _id: "${parameter to be used}"
+                    count:{
+                        $sum: 1   // adds the data whose _id paramter is same 
+                    }
+                }
+            },
+            {
+                $unwind:{           // without any special paramter in it it just remove the elements in Array at specified path
+                    path: "${specify which table paramter you need to remove array form of }",
+                    includeArrayIndex: "{name of tble parameter which will have index of hobby}"
+
+                }
+            },
+            {
+                $sort:{
+                    $count: 1 (ascending) and -1(descending)
+                }
+            },
+            {
+                $limit:{
+                    $count:{amount which is the min limit for table element to be shown}
+
+                }
+            },
+            {
+                $lookup: {      // join element of two tables with one similar element //first go to second table where you want to insert the element of the first
+                    from: "{which table you are tking data from}",
+                    localField: "{field present in the current table related to the other table}" / "local key"
+                    foreignField: "foreign key",
+                    as: "{name of table parameter which will have the data from the other table}"
+
+                }
+            }
+        ]

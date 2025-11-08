@@ -12,7 +12,7 @@ const perimeter = (a, b) => 2 * (a + b);
 function calculate(data, logic) {
     const result = [];
 
-    for (let rec of data) {
+    for (let rect of data) {
         const output = logic(rect.length * rect.width);
         result.push(output);
     }
