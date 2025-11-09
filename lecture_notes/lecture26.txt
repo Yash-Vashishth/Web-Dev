@@ -1,0 +1,42 @@
+1. React
+    -- npm create vite@latest
+    -- npm run build - this is the command that shrinks all the structure(done for developer friendly access) to a small file dist(with html,css and js) a shortened version with all programs written in it.
+    -- in main.jsx the <StrictMode></StrictMode> command is for rendering components 2 times so as to not miss any rpoduction changes that could be missed in code execution
+    -- main.jsx takes in components called in the App.jsx and that is rendered(or dropped) into the div named "root" of index.html 
+
+    -- We know that in return we have to have one element only as eturning which is why we return <div></div> in all components and App.jsx
+    -- To avoid this, we use fragment element to create a single parent element which will not add any extra element to the main code 
+
+2. React Manipulation
+    -- Esacape to JS 
+        --const Person = (props)=>{
+            <p>Name: {props.name}</p>
+        }
+
+3. Interview How is JSX running in the browser
+    -- JSX is not running. When we run jsx, the babel compiler present in the file converts jsx into js and executes it as an executable js file
+    -- without wrapper <button Onclick={clickHandler}></button> will give definiiton of function clickHandler
+    -- with wrapper <button Onclick={()=>clickHandler()}></button>
+
+4. Done tasks
+    -- props
+    -- COmponents reusing  (using <Person></Person> many times)
+    -- Rendering an array/list using map function
+    -- Conditional rendering ({(value_defined_outside) ? {output} : {else execute this}})
+    --UseStates
+
+5. State
+    -- useState gives two values in array -> [{name},set{name}]
+    -- Allows change to {name} wherever it is used in the html ui whenever set is used to change its value
+    -- It triggers Rerendering of the whole Component
+    -- It is using Reconciliation Algorithm to check for difference between the old state and the new State and then rendering the component again
+
+6. Component Lifecycle
+    i. Create
+    ii. Mount
+    iii. Update
+    iv. Unmount
+
+7. In Taiwind we first used class but in the jsx file we use className. this className is converted to class when babel interprets jsx file 
+
+    
