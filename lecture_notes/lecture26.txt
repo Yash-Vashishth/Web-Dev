@@ -38,5 +38,11 @@
     iv. Unmount
 
 7. In Taiwind we first used class but in the jsx file we use className. this className is converted to class when babel interprets jsx file 
+8. In Prop Drilling we pass props used in parent jsx to child jsx by passing it as a parameter. 
+9. In Prop Uplifting 
+    -- we sent data from child to parent 
+    -- create function which requires input in parent 
+    -- create data in child and drill prop to child
+    -- pass data into prop which is then sent into parent element definition
 
     
