@@ -14,7 +14,7 @@ const NewCounter = () => {
           <p>{count}</p>
 
           {/* <button Onclick={clickHandler}>+1</button>      without handler*/}
-          <button Onclick={()=>clickHandler()}>+1</button>
+          <button onClick={()=>clickHandler()}>+1</button>
       </>
   )
 }

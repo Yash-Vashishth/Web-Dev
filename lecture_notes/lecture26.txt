@@ -8,7 +8,7 @@
     -- To avoid this, we use fragment element to create a single parent element which will not add any extra element to the main code 
 
 2. React Manipulation
-    -- Esacape to JS 
+    -- Escape to JS 
         --const Person = (props)=>{
             <p>Name: {props.name}</p>
         }
