@@ -1,0 +1,19 @@
+1. Documentations to explore
+    -- React
+    -- Neon
+
+2. To Do App
+    Create a checking state in project to add a line through the list items when marked as completed 
+
+3. useState Issue
+    when we axios to get product we get the products but the rerendering done for mapping products is giving an almost infinite 
+    call which is waste of data and memory usage
+
+4. useEffect(a,b)
+    a=()=>{}
+    b=[]   ------> Dependency Array 
+           ------> always array pased in second argument
+           ------> containes the states in which rerendering is to be done on change of states (useState names) specified in array 
+
+    -Always executed when the component is first mounted
+    
