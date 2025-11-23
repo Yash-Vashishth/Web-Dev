@@ -1,0 +1,59 @@
+1. Batch Operations
+    When we have function
+        [data,setdata]=useState(true)
+
+        getData(){
+            setdata(false);
+            setdata(true);
+            setdata(false);
+            setdata(true);
+        }
+        getData()
+    --- If this is called openly it first sets the dat state as false then rerenders the component
+    --- then the function , since it is called openly is called again, it executes and first line of function is executed again and rerendering is done 
+        again and again in an infinite loop as told in last lecture
+    --- to resolve this problem we use useEffect() in which the funtion is rerendered only once during the mounting 
+
+
+2. Error
+    const [count, setCount] = useState(0)
+
+    const increment =()=>{
+        setCount(count + 1)
+    }
+    const IncrementbyThree=()=>{
+        increment()
+        increment()
+        increment()
+        //or
+        setCount(count + 1);
+        setCount(count + 1);
+        setCount(count + 1);
+    }
+    
+    -- This sets the counter value to 1 for the first increment and rerenders it 
+    -- Then it takes the previous state of the count for the second function 
+    -- Since it has not been commited to the jsx file it takes previous value of count from declaration i.e. 0
+    -- Then this is updated to 1 again 
+    -- This is why IncrementbyThree only works and increments by 1 even for multiple calls 
+    -- resolving it is simple 
+        const IncrementbyThree=()=>{
+            setCount(count => count + 1);  
+            setCount(count => count + 1);
+            setCount(count => count + 1);
+        }
+    -- This takes previous elements from the count declared in the preious line and updates it without problem
+
+3. Incrementing two counter using same button
+    -- Solution : write useState() and handleIncrement() function in the App.jsx file and have button for increment there only
+                  just pass the count in the two <Counter /> in the App to get two different counter being incremented at the same time 
+4. Incrementing two counter using different button
+    -- Solution : Use <Counter /> in App.jsx two times to get two Cunter with increment 
+
+5. Important 
+    -- when we are making handler functions always write th function declaration as handle______(func name to perform here){}
+        eg. handleIncrement
+    -- when we are passing the function as props to a child we define the prop as on____(func name to perform here)
+        eg <Counter onIncrement={handleIncrement} />
+    
+6. Reducer function -- read on react.dev
