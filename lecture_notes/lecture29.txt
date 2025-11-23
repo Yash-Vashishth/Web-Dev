@@ -15,3 +15,31 @@
 
 4. TodoProvider is used to enclose the <App /> which allows the states to be used globally
 5. useContext and createContext used to specify states 
+
+6. SysMind
+7. Redux Toolkit (rtk)
+    this allows creation of actions in the form of functions which are sent through the dispatch to the reducer for execution of functions
+
+8. const counterSlice = createSlice({
+    name: "counter" ,
+    initialState : {value:0},
+    reducers : {
+        increment
+    }
+})
+    Q. How does React allow changing of state directly through change in the value?
+    Immer package in the npm allows redux toolkit to directly change the vlue of a state in a function 
+
+
+9. Generally state of a element in React can't be changed but this immer package creates an immmutable skill tree to change the value of the state
+
+10. action creaters passed in dispatch send the actions with command through the following syntax 
+    {
+        type:
+        payload: 
+    }
+
+11. Flow of state in redux
+
+    creation (in slice named folder) --> action creaters exported ---> dispatch function(created by redux) used in passing actions 
+    ---> reducers (perform the action and render the component) --> UI output

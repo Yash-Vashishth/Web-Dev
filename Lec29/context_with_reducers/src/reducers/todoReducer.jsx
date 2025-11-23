@@ -14,11 +14,11 @@ export function todoReducer (todos, action) {
     }
 
     case "removed": {
-      return todos.filter(todo => todo.id !== action.id)
+      return todos.filter(todo => todo.id !== action.id);
     }
 
     case "completed": {
       return todos.map(todo => todo.id == action.id ? {...todo, completed: !todo.completed} : todo)
     }
   }
-}
+};
