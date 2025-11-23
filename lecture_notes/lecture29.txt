@@ -1,0 +1,17 @@
+1. React has a problem 
+    Props and states passed from the chain down through a file system increase complexity of code and increase rendering of the file down the line 
+    This slows down the application
+
+    Solution: ContextAPI which gives providers folder and specifies the states and props used throughout the file in it 
+                THis is useful only for small scale application
+
+                For large scale Application we use GTK module 
+
+2. Problem with ContextAPI : Each change in state rerenders all the components that use that state in them thus slowing this while application down
+                            Solution: This is resolved by Redux TOolkit
+
+
+3. {children} returns all the elements called inside the component in one file to the component's definition in another
+
+4. TodoProvider is used to enclose the <App /> which allows the states to be used globally
+5. useContext and createContext used to specify states 
